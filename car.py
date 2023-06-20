@@ -1,4 +1,5 @@
 import logging
+import random
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -66,8 +67,23 @@ class ToyotaCar:
         print(f"Current Speed: {self.speed} km/h")
 
 
-# Example usage:
-toyota_car = ToyotaCar("Camry", 2022, "Silver", 15000, "Petrol")
+toyota_models = ["Camry", "Corolla", "RAV4", "Highlander", "Prius", 
+                 "Sienna", "Tacoma", "Tundra", "C-HR", "Yaris", "Supra", "Land Cruiser"]
+
+years = list(range(1999, 2021))
+
+mileage = [0, 10000, 20000, 50000, 75000, 100000, 150000, 200000, 250000, 300000]
+car_colors = ["Black", "White", "Silver", "Gray", "Red", "Blue", "Green", "Yellow",
+              "Orange", "Purple", "Brown", "Beige"]
+
+fuel_types = ["Gasoline", "Diesel", "Electric", "Hybrid", "Ethanol", "LPG (Liquefied Petroleum Gas)", 
+              "CNG (Compressed Natural Gas)", "Hydrogen"]
+
+
+
+toyota_car = ToyotaCar(random.choice(toyota_models), random.choice(years), random.choice(car_colors)
+                       ,random.choice(mileage), random.choice(fuel_types))
+
 toyota_car.display_info()
 
 toyota_car.start_engine()
