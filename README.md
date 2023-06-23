@@ -34,6 +34,8 @@ The ToyotaCar class includes various methods to interact with the car, such as s
 
 ## Logging Details
 
+![Logger Creation Diagram](logger_diagram.png)
+
 * The logger is initialized using `logging.getLogger(__name__)`, where `__name__` represents the module name.
 * The logger's level is set to `logging.INFO`, which means it will capture log messages with an informational level or above.
 * The logger uses a `Formatter` object with the format `'%(levelname)s:%(name)s:%(message)s'`, which specifies how the log messages should be formatted.
@@ -52,7 +54,3 @@ Remember to configure the logger as per your application's requirements and modi
 
 * Python 3.x
 * logging module (included in the Python standard library)
-
-## Logger Creation Diagram
-
-![Logger Creation Diagram](logger_diagram.png)
