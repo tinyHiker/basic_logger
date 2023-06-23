@@ -53,6 +53,6 @@ Remember to configure the logger as per your application's requirements and modi
 * Python 3.x
 * logging module (included in the Python standard library)
 
-## Logger Diagram
+## Logger Creation Diagram
 
-*Insert Logger Diagram Here*
+![Logger Creation Diagram](logger_diagram.png)
